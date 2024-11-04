@@ -2,23 +2,35 @@
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-💰 Expense Tracker App
+# Expense Tracker App
 
-Welcome to the Expense Tracker app, built with Expo! This app allows users to effortlessly manage their finances, keep track of income and expenses, and view monthly summaries with visual insights.
+Welcome to the **Expense Tracker App** — a React Native application built with [Expo](https://expo.dev) to manage and visualize your expenses and income.
 
-Overview
+## Overview
 
-The Expense Tracker app is designed to help users gain control over their finances. Key features include:
+This app allows users to:
 
-Transaction Logging: Add and categorize income and expense transactions with descriptions and dates.
-Dynamic Filtering & Sorting: Filter transactions by type (income or expense) and sort by date or amount.
-Monthly Summary: Visualize monthly expenses with a pie chart, broken down by category.
-Smooth Navigation: Intuitive navigation with React Native components and Expo Router for seamless user experience.
-Key Components
+- Track income and expenses with a simple, intuitive interface.
+- Filter and sort transactions by type (income or expense).
+- View monthly summaries with visualizations of expenses by category.
+- Add, edit, and delete transactions with ease.
 
-Transactions Screen: A screen to view, sort, and filter transactions. Includes options to add new transactions or view monthly summaries.
-Summary Screen: A detailed monthly summary showing total income, total expenses, and a pie chart categorizing expenses.
-Add Transaction Screen: Allows users to add new transactions with fields for type, amount, description, date, and category.
+## Features
+
+### Transactions Screen
+- **View All Transactions**: See a list of all income and expense records.
+- **Filter & Sort**: Filter transactions by type (income or expense) and sort them by date.
+- **Detailed View**: Each transaction includes type, amount, description, date, and category.
+
+### Add Transaction
+- **Transaction Type**: Choose between income and expense.
+- **Amount & Description**: Enter the transaction amount and a short description.
+- **Date**: Select the date of the transaction.
+- **Category**: Choose a category such as housing, food, utilities, or supplies.
+
+### Summary Screen
+- **Monthly Totals**: Get a quick overview of total income and expenses for the month.
+- **Pie Chart Visualization**: See a breakdown of expenses by category in a colorful pie chart.
 
 ## Get started
 
