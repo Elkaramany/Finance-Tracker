@@ -23,7 +23,8 @@ interface Props {
     customFontSize?: number;
     customLineHeight?: number;
     underLine?: boolean;
-    centered?: boolean
+    centered?: boolean;
+    testID?: string
 }
 
 const TextComponent: React.FC<Props> = ({
@@ -48,6 +49,7 @@ const TextComponent: React.FC<Props> = ({
     customLineHeight,
     underLine,
     centered,
+    testID,
     ...props
 }) => {
     const stylesArray: Array<TextStyle | undefined> = [
@@ -84,7 +86,7 @@ const TextComponent: React.FC<Props> = ({
     if (underLine) stylesArray.push({ textDecorationLine: 'underline' })
     if (centered) stylesArray.push({ textAlign: 'center' })
     return (
-        <Text {...props} style={[...stylesArray, style]}>
+        <Text {...props} style={[...stylesArray, style]} testID={testID}>
             {value}
         </Text>
     );

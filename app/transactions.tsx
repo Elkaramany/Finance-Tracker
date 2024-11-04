@@ -31,10 +31,10 @@ const Transactions = () => {
       <List data={transactions} />
       {!sortingModalOpen &&
         <View style={globalStyles.bottomContainer}>
-          <Button value='Sort Or Filter'
+          <Button value='Sort Or Filter' testID='button-sort-or-filter'
             onPress={() => setSortingModalOpen(true)} />
 
-          <Button value='Summary'
+          <Button value='Summary' testID='button-summary'
             onPress={() => router.push('/summary')} />
         </View>
       }

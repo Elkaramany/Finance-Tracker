@@ -9,11 +9,12 @@ interface Props {
     buttonStyle?: ViewStyle
     textStyle?: TextStyle
     icon?: React.ReactNode
+    testID?: string
 }
 
-const Button: React.FC<Props> = ({ onPress, value, buttonStyle, textStyle, icon }) => {
+const Button: React.FC<Props> = ({ onPress, value, buttonStyle, textStyle, icon, testID }) => {
     return (
-        <TouchableOpacity onPress={onPress}
+        <TouchableOpacity onPress={onPress} testID={testID}
             style={[styles.container, buttonStyle]}>
             {icon && <View style={{ paddingRight: scale(5) }}>{icon}</View>}
             <Text value={value} style={[styles.buttonText, textStyle]} title />

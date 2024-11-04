@@ -83,6 +83,7 @@ const BottomSheet: React.FC<BottomSheetProps> = ({
             animationType="none"
             visible={visible}
             onRequestClose={closeBottomSheet}
+            testID='filtering-modal'
         >
             <View style={styles.overlay}>
                 <TouchableOpacity style={{ height: backgroundHeight }} onPress={closeBottomSheet} />
